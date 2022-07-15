@@ -46,16 +46,17 @@ input::placeholder {
 </style>
 
 <div class="center-column">
-<h3>
-    Update Task
-</h3>
 
-<form method="POST" action=""> 
+
+<form class="form form-inline" method="POST" action="">
     {% csrf_token %}
     {{ form }}
-    
-    <input class="btn btn-info" type="submit" name="Update task" >
-  
+    <div class="form-group">
+      <h3 class="form-header">
+          Update Task
+      </h3>
+      <input class="btn btn-info" type="submit" name="Update task" >
+    </div>
 
 </form>
 </div>
