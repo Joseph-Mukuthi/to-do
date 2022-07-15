@@ -52,11 +52,11 @@
     </style>
     <div class="container">
       <div class="col-md-8 centered">
-        <p class="alert alert-warning">Are you sure you want to delete "{{item}}"</p>
-        <button class="btn btn-warning">
-          <a href="{% url 'list' %}">Cancel&nbsp;&times</a>
+        <p class="alert alert-warning">Are you sure you want to delete "{{item}}"
+        </p>
+        <button class="btn">
+          <a class="btn btn-danger" href="{% url 'list' %}">Cancel</a>
         </button>
-        
         <form method="POST" action ="">
 
             {% csrf_token %}
